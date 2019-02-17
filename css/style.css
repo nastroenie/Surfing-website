@@ -495,14 +495,49 @@ a {
     font-weight: 600;
 }
 
-.close-menu {
+.close-menu{
+    height: 4px;
+    width:40px;
     position: absolute;
-    right: 2rem;
-    top: 50px;
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-    z-index: 999;
-    line-height: 0;
+    top: 5%;
+    right: 5%;
+    border-radius: 50px;
+    background-color: #4A2545;
+    transform: translate(-50%,-50%) rotate(0deg);
+    transition: all ease 0.5s;
     cursor: pointer;
+}
+.close-menu::before,::after{
+    content:"";
+    position: absolute;
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    margin: auto;
+    width: 50%;
+    transition: all ease 0.5s;
+}
+
+.close-menu::before{
+    top: -12px;
+    left: 0;
+    transform-origin: left;
+}
+.close-menu::after{
+    bottom:-12px;
+    right: 0;
+    transform-origin: right;
+}
+
+.open{
+transform:translate(-50%,-50%) rotate(135deg);
+}
+
+.open::before{
+    top:0;
+    transform: translateX(100%) rotate(-90deg);
+}
+.open::after{
+    bottom:0;
+    transform: translateX(-100%) rotate(-90deg);
 }
