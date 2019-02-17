@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Surfing</title>
+
+    <!-- Отображение страницы в масштабе 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Инструкция для IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Собственные стили -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+
+    <!-- Файл со стилями для кроссбраузерности. Нормализация стилей -->
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Библиотека Animate-css. Позволяет анимировать элементы страницы. Работает только при обновлении самой страницы -->
+    <link rel="stylesheet" href="libs/Animate-css/animate.css">
+
+    <!-- Подключение веб-шрифтов Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900|Playfair+Display:400,400i" rel="stylesheet">
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -33,8 +44,8 @@
     <header class="header-wrapper">
 
         <!-- header title -->
-        <h1 class="header-title">Long Beach Surfing Institute</h1>
-        <div class="header-description">
+        <h1 class="header-title wow slideInDown">Long Beach Surfing Institute</h1>
+        <div class="header-description wow slideInUp">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
@@ -84,7 +95,7 @@
                     <img src="img/video/img-3.jpg" alt="Video">
                 </div>
             </div>
-            <!-- // videos right -->    
+            <!-- // videos right -->
         </div>
         <!-- // header content -->
 
@@ -162,7 +173,6 @@
     </section>
 </header>
     <!-- // header wrapper -->
-    
     <!-- Footer -->
     <footer class="footer">
         <!-- footer-container 1080px -->
@@ -178,6 +188,15 @@
     </footer>
     <!-- // Footer -->
 
-</body>
 
+    <!-- Подключение библиотеки Jquery -->
+    <script src="libs/jquery-3.3.1.min.js"></script>
+
+    <!-- Подключение библиотеки WOW-master для анимации при прокрутки страницы -->
+    <script src="libs/WOW-master/dist/wow.min.js"></script>
+
+    <!-- Собственный файл для скриптов -->
+    <script src="js/main.js"></script>
+
+</body>
 </html>
