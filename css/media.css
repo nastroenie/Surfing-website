@@ -3,7 +3,13 @@
 @media  (min-width: 620px) {
     /* Navigation Header block */
 
-    .nav { display: block; }
+    .nav {
+        display: block;
+    }
+
+    .close-menu {
+        display: none;
+    }
 
     .nav-wrapper {
         justify-content: space-between;
@@ -25,6 +31,17 @@
 
 @media  (min-width: 650px) {
     /* Navigation Header block */
+
+    .nav-wrapper {
+        flex-direction: row;
+    }
+
+    .nav__item {
+        margin-right: 40px;
+        display: inline-block;
+        flex-direction: row;
+        padding-top: 0px;
+    }
 
     .videos {
         flex-direction: row;
@@ -56,6 +73,7 @@
 
 
 @media  (min-width: 920px) {
+
     .instructors-wrapper {
         flex-direction: row;
     }
@@ -81,12 +99,17 @@
 @media  (min-width: 1280px) {
     /* Navigation Header block */
 
+    .logo {
+        margin-bottom: 0px;
+    }
+
     .nav-wrapper {
         max-width: 1480px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 92px;
         margin-bottom: 220px;
+        flex-direction: row;
     }
 
     .header-wrapper {
@@ -203,6 +226,12 @@
 
     .footer-container {
         width: 1180px;
+    }
+
+    .nav__item {
+        margin-right: 70px;
+        display: inline-block;
+        flex-direction: row;
     }
 
 }
